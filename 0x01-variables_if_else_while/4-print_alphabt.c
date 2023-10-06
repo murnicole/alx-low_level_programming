@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <ctype.h>
 /**
- * main - Print alphabet in lowercase except q and e
- *
- * Return: return 0 (success)
- */
+*main - Aphabet letters except q and e
+*
+*Return: return 0
+*/
 int main(void)
 {
 	int alph;
@@ -13,10 +13,10 @@ int main(void)
 	{
 		if (alph == 'q' || alph == 'e')
 		{
-		continue;
+			continue;
 		}
 		putchar(alph);
 	}
 	putchar('\n');
 	return (0);
-}	
+}
