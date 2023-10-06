@@ -8,7 +8,6 @@
 int main(void)
 {
 	int alph;
-	
 	for (alph = 'z'; alph >= 'a'; alph--)
 	{
 		putchar(alph);
