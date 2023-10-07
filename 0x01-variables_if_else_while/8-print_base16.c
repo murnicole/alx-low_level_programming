@@ -1,27 +1,27 @@
 #include <stdio.h>
 #include <ctype.h>
 /**
- * main - Numbers of base 16 starting from 0
- *
- * Return: Always 0(Success)
- */
+*main - Numbers of base 16
+*
+*Return: returns 0
+*/
 int main(void)
 {
-        int i;
+	int num;
 
-        for (i = '0'; i < '9'; i++)
-        {
-                putchar(i);
-		if (i == '9')
+	for (num = '0'; num <= '9'; num++)
+	{
+		putchar(num);
+		if (num == '9')
 		{
-			i = 'a';
-			for (; i <= 'f'; i++)
+			num = 'a';
+			for (; num <= 'f'; num++)
 			{
-				putchar(i);
+				putchar(num);
 			}
 			break;
 		}
-        }
-        putchar('\n');
-        return (0);
+	}
+	putchar('\n');
+	return (0);
 }
